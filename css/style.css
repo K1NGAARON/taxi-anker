@@ -1,0 +1,19 @@
+section .elementor-container h1 {
+	font-size: 54px;
+}
+
+section .elementor-container h2 {
+	font-size: 46px;
+}
+
+section .elementor-container h3 {
+	font-size: 32px;
+}
+
+section .elementor-container h4 {
+	font-size: 26px;
+}
+
+section .elementor-container p {
+	font-size: 18px;
+}
