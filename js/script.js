@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function(e) {
     }
 
     const pagesToShowLogo = [
-        'prijzen - taxi anker',
-        'contacteer taxi anker - taxi anker',
-        'algemene voorwaarden - taxi anker',
-        'privacybeleid - taxi anker'
+        'onze prijzen bij taxi anker',
+        'contacteer taxi anker voor meer informatie | taxi anker',
+        'algemene voorwaarden | taxi anker',
+        'privacybeleid | taxi anker'
     ];
 
     const pageLocation = document.title.toLowerCase();
