@@ -28,12 +28,21 @@ section .elementor-container p {
     justify-content: flex-start;
     gap: 10px;
     padding: 10px 0;
+    max-width: 1500px;
 }
 
 #site-header .header-inner img {
     width: 100%;
     max-width: 150px;
     height: auto;
+}
+
+#site-footer {
+    display: none;
+}
+
+.hidden {
+    display: none!important;
 }
 
 @media (max-width: 768px) {

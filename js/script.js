@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", function(e) {
         headerInner.insertAdjacentHTML('afterbegin', logo);
     };
 
+    function removeOldHeader(e) {
+        document.querySelector('.page-header').classList.add('hidden');
+    }
+
     const pagesToShowLogo = [
         'prijzen - taxi anker',
         'contacteer taxi anker - taxi anker',
@@ -16,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     const pageLocation = document.title.toLowerCase();
 
     if (pagesToShowLogo.includes(pageLocation)) {
-        addLogo()
+        addLogo();
+        removeOldHeader();
     };
 });
