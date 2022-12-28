@@ -41,7 +41,8 @@ section .elementor-container p {
     display: none;
 }
 
-.hidden {
+.hidden,
+.hide-lg {
     display: none!important;
 }
 
