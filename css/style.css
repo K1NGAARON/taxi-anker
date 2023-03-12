@@ -36,6 +36,10 @@ section .elementor-container p {
     font-size: 16px;
 }
 
+.payment-logos {
+    max-width: 200px;
+    object-fit: contain;
+}
 
 #site-header .header-inner {
     display: flex;
