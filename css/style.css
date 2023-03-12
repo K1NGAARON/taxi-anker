@@ -23,6 +23,20 @@ section .elementor-container p {
 	font-size: 18px;
 }
 
+#site-header .header-inner .website-logo {
+    max-width: 100px;
+    object-fit: contain;
+}
+
+.site-branding.show-title .site-title.show {
+    font-size: 30px;
+}
+
+.site-branding.show-title .site-description.show {
+    font-size: 16px;
+}
+
+
 #site-header .header-inner {
     display: flex;
     justify-content: flex-start;

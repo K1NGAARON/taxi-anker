@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     const headerInner = document.querySelector('#site-header > .header-inner');
     
     function addLogo(e) {
-        const logo = `<img src="https://taxianker.be/wp-content/uploads/2022/11/logo.png" alt="Taxi Anker Logo">`;
+        const logo = `<img class="website-logo" src="https://taxianker.be/wp-content/uploads/2022/11/logo.png" alt="Taxi Anker Logo">`;
         headerInner.insertAdjacentHTML('afterbegin', logo);
     };
 
@@ -15,19 +15,22 @@ document.addEventListener("DOMContentLoaded", function(e) {
         headerInner.insertAdjacentHTML('beforeend', phoneNumber);
     };
 
-    const pagesToShowLogo = [
-        'onze prijzen bij taxi anker',
-        'contacteer taxi anker voor meer informatie | taxi anker',
-        'algemene voorwaarden | taxi anker',
-        'privacybeleid | taxi anker'
-    ];
+    addLogo();
+    removeOldHeader();
 
-    const pageLocation = document.title.toLowerCase();
+    // const pagesToShowLogo = [
+    //     '/prijzen/',
+    //     '/contact/',
+    //     '/algemene-voorwaarden-taxi-ancker/',
+    //     '/privacybeleid/'
+    // ];
 
-    if (pagesToShowLogo.includes(pageLocation)) {
-        addLogo();
-        removeOldHeader();
-    };
+    // const pageLocation = window.location.pathname;
+
+    // if (pagesToShowLogo.includes(pageLocation)) {
+    //     addLogo();
+    //     removeOldHeader();
+    // };
 
     addPhoneHome();
 });
