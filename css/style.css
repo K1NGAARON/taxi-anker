@@ -1,3 +1,7 @@
+:root {
+    --primary: #e8c79e;
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -21,6 +25,10 @@ section .elementor-container h4 {
 
 section .elementor-container p {
 	font-size: 18px;
+}
+
+#site-header {
+    padding-top: 0;
 }
 
 #site-header .header-inner .website-logo {
@@ -63,6 +71,29 @@ section .elementor-container p {
 .hide-lg {
     display: none!important;
 }
+
+.contact-bar {
+    width: 100%;
+    display: flex;
+    background-color: #f3f3f3;
+    padding: 10px 30px;
+}
+
+.contact-bar .row {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.contact-bar .row i {
+    color: var(--primary);
+}
+
+.contact-bar .row a {
+    text-decoration: none;
+}
+
 
 @media (max-width: 768px) {
     #site-header .header-inner {
